@@ -9,5 +9,7 @@ int main()
 	{
 		f=f*i;
 	}
+	cout<<"factorial of no."<<n<<"is"<<f<<endl;
+	return(0);
 }
 
