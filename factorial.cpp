@@ -11,6 +11,6 @@ int main()
 	}
 	cout<<"factorial of no."<<n<<"is"<<f<<endl;
 	//
-	//return(0);
+return(0);
 }
 
