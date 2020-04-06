@@ -6,5 +6,6 @@ int main()
 	cout<<"Enter a character";
 	cin>>c;
 	cout<<"ANSCII code= "<<c<<" is "<<int(c);
+	return 0;
 }
 
