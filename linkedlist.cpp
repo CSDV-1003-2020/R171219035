@@ -24,16 +24,17 @@ void insertAfter(Node* prev_node, int new_data)
         cout<<"the given previous node cannot be NULL";  
         return;  
     }  
-  
-    /* 2. allocate new node */
+ 
     Node* new_node = new Node(); 
-  
-    /* 3. put in the data */
+ 
     new_node->data = new_data;  
   
-    /* 4. Make next of new node as next of prev_node */
+    
     new_node->next = prev_node->next;  
-  
-    /* 5. move the next of prev_node as new_node */
+ 
     prev_node->next = new_node;  
 }  
+/* Given a reference (pointer to pointer) 
+to the head of a list and an int, inserts 
+a new node on the front of the list. */
+void push(Node** head_ref, int new_data)
