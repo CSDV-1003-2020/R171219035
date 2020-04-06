@@ -15,11 +15,6 @@ void person:: getdata()
 	cout<<"enter age"<<endl;
 	cin>>a;
 }
-void person :: display()
-{
-	cout<<"name"<<name<<endl;
-	cout<<"age"<<a<<endl;
-}
 int main()
 {
 	person p;
