@@ -32,5 +32,12 @@ void deleteNode(struct Node **head_ref, int key)
         free(temp);               // free old head 
         return; 
     } 
+   // Search for the key to be deleted, keep track of the 
+    // previous node as we need to change 'prev->next' 
+    while (temp != NULL && temp->data != key) 
+    { 
+        prev = temp; 
+        temp = temp->next; 
+    } 
   
   
