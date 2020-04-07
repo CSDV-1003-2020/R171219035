@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main()
+void main()
 {
 	int i,f=1,n;
 	cout<<"enter ano.";
@@ -11,6 +11,6 @@ int main()
 	}
 	cout<<"factorial of no."<<n<<"is"<<f<<endl;
 	//
-return(0);
+
 }
 

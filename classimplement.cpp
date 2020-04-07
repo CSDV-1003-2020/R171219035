@@ -2,28 +2,28 @@
 using namespace std;
 class item
 {
-	int n;//private by default
+	int n;
 	float c;
 	public:
-		void get_data(int a,float b);//prototype declartion
-		//inline function
-		void put_data()//function defination
+		void get_data(int a,float b);
+		
+		void put_data()
 		{
-			cout<<"no."<<n<<"\n";
-			cout<<"cost"<<c<<"\n";
+			cout<<"no."<<n<<endl;
+			cout<<"cost"<<c<<endl;
 		}
 };
-//.........member function definition......
+
 void item ::get_data(int a,float b)
 {
 	n=a;
-	c=b;//private variables directly used
+	c=b;
 }
-//...........main prgm................
+
 int main()
 {
-	item x;//creting an object
-	cout<<"\n object x"<<"\n";
+	item x;
+	cout<<"\n object x"<<endl;
 	x.get_data(100,6.4);
 	x.put_data();
 	item y;
