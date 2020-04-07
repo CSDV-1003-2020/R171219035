@@ -88,4 +88,12 @@ void append (Node** head_ref, int new_data)
     last->next = new_node;
     return;
 }
+void printList(Node *node)  
+{  
+    while (node != NULL)  
+    {  
+        cout<<" "<<node->data;  
+        node = node->next;  
+    }  
+}  
     
