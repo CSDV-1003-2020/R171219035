@@ -88,4 +88,39 @@ void append (Node** head_ref, int new_data)
     last->next = new_node;
     return;
 }
+    // This funtion prints contents of linkrd list starting from head 
+void printlist(Node *node)
+{
+    while (node != NULL)
+    {
+        cout<<""<<node->data;
+        node = node->next;
+    }
+}
+
+//Driver code
+int main()
+{
+    //start with the empty list 
+    Node*head =NULL;
     
+    //insert 6. so linkec list becomes 6->NULL
+    append(&head,7);
+        
+    //insert 7 at the beginning
+    //so linkrd list become 7->6->NULL
+    push(&head,7);
+    
+    // insert 1 at the beginning
+    // so linked list becomes 1->7->6->NULL
+    append(&head,4)
+        
+    //insert 8 ,after 7 so linked 
+    // list becomes 1->7->8->6->4->NULL
+        insertAfter(head->next,8);
+    
+    cout<<"created linked listis :";
+    printList(head);
+    
+    return 0;
+}
