@@ -41,3 +41,42 @@ void deleteNode(struct Node **head_ref, int key)
     } 
   
   
+//if key was not present in linked list 
+  if ( temp==NULL)return;
+  
+  //unlink the node from linkrd list
+  prev->next = temp->next;
+  free(temp);  //free memory
+}
+
+//this function prints contents of linked list starting from the given node
+void printlist (struct Node *node)
+{
+  while (node != NULL)
+  {
+    printf ("%d", node->data);
+    node = node->next;
+  }
+}
+
+//Drier program to test above fnction
+int main()
+{
+  // start withthe empty list
+  struct Node*head=NULL;
+  
+  push(&head,7);
+  push(&head,1);
+  push(&head,3);
+  push(&head,72);
+  
+  puts("created linked list");
+  printlist(head);
+  deleteNofde(&head, 1);
+  puts ("\n linked list after deletion of 1:");
+  printlist(head);
+  return 0;
+}
+  
+  
+  
