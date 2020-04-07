@@ -18,4 +18,19 @@ void push(struct Node** head_ref, int new_data)
     new_node->next = (*head_ref); 
     (*head_ref)    = new_node; 
 } 
+/* Given a reference (pointer to pointer) to the head of a list 
+   and a key, deletes the first occurrence of key in linked list */
+void deleteNode(struct Node **head_ref, int key) 
+{ 
+    // Store head node 
+    struct Node* temp = *head_ref, *prev; 
+  
+    // If head node itself holds the key to be deleted 
+    if (temp != NULL && temp->data == key) 
+    { 
+        *head_ref = temp->next;   // Changed head 
+        free(temp);               // free old head 
+        return; 
+    } 
+  
   
