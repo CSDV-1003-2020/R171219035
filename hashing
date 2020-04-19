@@ -14,5 +14,11 @@ void countFreq(int arr[], int n)
         cout << x.first << ” occurs ” << x.second << ” times ” << endl; 
 
 }
- 
+ int main()
+ {
+ int n;
+ cout<<"enter the next num for elements";
+ cin>>n;
+ cout<<"input the elements of array";
+ int arr[n];
 
