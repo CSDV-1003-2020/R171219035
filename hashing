@@ -8,6 +8,11 @@ void countFreq(int arr[], int n)
     for(int i=0;i<=n-1;i++)
     {
     mp[arr[i]]++;
- }
+    }
+ for (auto x : mp) 
+
+        cout << x.first << ” occurs ” << x.second << ” times ” << endl; 
+
+}
  
 
