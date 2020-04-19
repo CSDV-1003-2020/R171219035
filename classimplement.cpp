@@ -31,4 +31,4 @@ int main()
 	y.put_data();
 	return(0);
 }
-
+//example of class implementation
