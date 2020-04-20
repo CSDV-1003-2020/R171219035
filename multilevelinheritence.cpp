@@ -13,11 +13,24 @@ class Vehicle
     } 
 }; 
 class fourWheeler: public Vehicle 
-{  public: 
+{
+private:
+int wheels;
+int doors;
+int c;
+public: 
     fourWheeler() 
     { 
       cout<<"Objects with 4 wheels are vehicles"<<endl; 
+      
+      
     } 
+    class twowheeler:public fourwheeler
+    {
+    twowheeler()
+    {
+     cout<<"vehicles are 2 two wheelers as well"<<endl;
+     }
 }; 
 // sub class derived from two base classes 
 class Car: public fourWheeler{ 
@@ -25,6 +38,7 @@ class Car: public fourWheeler{
      car() 
 	    {
        cout<<"Car has 4 Wheels"<<endl;
+	     cout<<"car has a roof top feature"<<endl;
      }
 };
 
