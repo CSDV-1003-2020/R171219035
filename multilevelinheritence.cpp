@@ -31,6 +31,11 @@ public:
     {
      cout<<"vehicles are 2 two wheelers as well"<<endl;
      }
+    class threewheeler:public threewheeler
+    {
+    	cout<<"vehicles are 3 for three wheeler as well"<<endl;
+    }
+
 }; 
 // sub class derived from two base classes 
 class Car: public fourWheeler{ 
