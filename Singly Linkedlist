@@ -29,3 +29,12 @@ void display(struct Node *p)
     p=p->next;
   }
 }
+void RDisplay(struct Node *p) 
+{    
+if(p!=NULL)  
+{     
+RDisplay(p->next);      
+printf("%d ",p->data);          
+}
+}
+
