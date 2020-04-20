@@ -2,4 +2,9 @@
 using namespace std;
 struct node{
 int data;
+struct node next;
 }
+*first=NULL;
+void create(intA[],int n){
+int i;
+struct node *t,*last;
