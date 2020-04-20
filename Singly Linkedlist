@@ -8,3 +8,5 @@ struct node next;
 void create(intA[],int n){
 int i;
 struct node *t,*last;
+first=(struct Node *)malloc(sizeof(struct Node);
+
